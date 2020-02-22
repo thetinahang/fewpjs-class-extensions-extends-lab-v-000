@@ -15,9 +15,9 @@ class Polygon {
 
 class Triangle extends Polygon {
   get isValid() {
-    check1 = this.sides[0] + this.sides[1] > this.sides[2];
-    check2 = this.sides[1] + this.sides[2] > this.sides[0];
-    check3 = this.sides[2] + this.sides[0] > this.sides[1];
+    const check1 = this.sides[0] + this.sides[1] > this.sides[2];
+    const check2 = this.sides[1] + this.sides[2] > this.sides[0];
+    const check3 = this.sides[2] + this.sides[0] > this.sides[1];
 
     return check1 && check2 && check3;
   }

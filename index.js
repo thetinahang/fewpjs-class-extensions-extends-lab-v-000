@@ -12,3 +12,11 @@ class Polygon {
     return this.sides.reduce((total, side) => side + total, 0);
   }
 }
+
+class Triangle extends Polygon {
+
+}
+
+class Square extends Polygon {
+
+}

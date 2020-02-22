@@ -32,4 +32,8 @@ class Square extends Polygon {
 
     return check1 && check2 && check3 && check4;
   }
+
+  get area() {
+    return this.sides[0] * this.sides[1];
+  }
 }

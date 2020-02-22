@@ -14,7 +14,13 @@ class Polygon {
 }
 
 class Triangle extends Polygon {
+  get isValid() {
+    check1 = this.sides[0] + this.sides[1] > this.sides[2];
+    check2 = this.sides[1] + this.sides[2] > this.sides[0];
+    check3 = this.sides[2] + this.sides[0] > this.sides[1];
 
+    return check1 && check2 && check3;
+  }
 }
 
 class Square extends Polygon {
